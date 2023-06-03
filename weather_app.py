@@ -6,7 +6,7 @@ import argparse
 import json
 
 # create a variable to store the API key
-name= (__name__)
+# name= (__name__)
 API_KEY = 'cc8bf2b2b089cf2e8669737ba08135b6'
 
 # create a logo for the app
@@ -89,7 +89,7 @@ def get_weather(city):
         print(f"JSON Decode Error: {err}")
 
     #create a main function to run the program
-if name == '__main__':
+if __name__ == '__main__':
     #create a parser to get the city name from the command line
     parser = argparse.ArgumentParser(description='Get the current weather forecast for a city.')
     parser.add_argument('city', type=str, help='Enter name of the city')
